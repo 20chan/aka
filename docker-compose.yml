@@ -44,6 +44,7 @@ services:
       - 7022:7022
     volumes:
       - ./client/app:/app
+      - ./client/app/nginx.conf:/etc/nginx/conf.d/default.conf
     stdin_open: true
     environment:
       PORT: 7022
